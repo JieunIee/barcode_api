@@ -1,6 +1,6 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Home from './pages/Home.tsx';
+import BarcodeScan from './pages/BarcodeScan.tsx';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -11,7 +11,7 @@ const Router = () => {
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="BarcodeScan" component={BarcodeScan} />
     </Stack.Navigator>
   );
 };
